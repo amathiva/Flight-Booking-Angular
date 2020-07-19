@@ -1,0 +1,30 @@
+<p>flight-details works!</p>
+<router-outlet></router-outlet>
+<table border=1 >
+    <thead>
+    
+    <th>Flight Number</th>
+    <th>AirLine</th> 
+    <th>Arrival Time</th>
+    <th>Departure Time</th>
+    <th>Duration</th>
+    <th>No. of Stops</th>
+    <th>Price</th>   
+    </thead>
+   
+  <tr *ngFor="let res of booking">
+    <td>{{res.flightNumber}}</td>  
+    <td id="name{{res.id}}" name="name">{{res.airLineName}}</td>
+    <td id="rate{{res.id}}" name="loc">{{res.arrivalTime}} </td>  
+    <td>{{res.departureTime}}</td>  
+    <td>{{res.duration}}</td>  
+    <td>{{res.noOfStops}}</td>  
+    <td>{{res.price}}</td>    
+    <td></td>    
+</tr>    
+  </table>
+
+  <br>
+     <br>
+     <br>
+
